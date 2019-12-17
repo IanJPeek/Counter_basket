@@ -9,10 +9,12 @@ class Counter extends Component {
   handleIncrement =() => {
     this.setState({count: this.state.count + 1})
   } 
-
+ 
   render() { 
+    
     return (
       <div>
+        
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button onClick={() => {
     this.handleIncrement()}} 
