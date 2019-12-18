@@ -36,6 +36,7 @@ class App extends React.Component {
   };
 
   render() {
+    console.log("App - rendered")
     return (
       <div className="App">
         <Navbar totalCounters={this.state.counters.filter(c => c.value>0).length}/>
